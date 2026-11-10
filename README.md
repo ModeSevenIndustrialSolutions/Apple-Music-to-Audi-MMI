@@ -6,12 +6,13 @@ SPDX-License-Identifier: GPL-3.0-or-later
 # Apple Music to Audi MMI
 
 Scripts that take your Apple Music (iTunes) library on a Mac and copy it to
-an SD card or USB thumb drive in the folder layout the Audi MMI browses
-best.
+an SD card or USB thumb drive in a folder layout the Audi MMI can fully
+import and read without truncating the library content. Tested in against a
+music library containing 1300 albums and ~17,000 tracks.
 
-> **Tested on Audi RS models from model year 2022 onwards.** Nobody has
-> tried it on other Audi models or MMI generations, and they may behave
-> differently. Reports from other cars are welcome.
+> **Tested on two Audi RS3 model from model year 2022 onwards.**
+> Nobody has tried it on other Audi models or MMI generations, and they may
+> behave differently. Reports from other cars are welcome.
 
 ## What is in this repository
 
