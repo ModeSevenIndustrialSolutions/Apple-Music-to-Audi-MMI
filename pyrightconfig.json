@@ -1,0 +1,8 @@
+{
+  "include": ["audit-library.py", "check-artwork.py"],
+  "exclude": [".venv"],
+  "venvPath": ".",
+  "venv": ".venv",
+  "pythonVersion": "3.11",
+  "typeCheckingMode": "standard"
+}

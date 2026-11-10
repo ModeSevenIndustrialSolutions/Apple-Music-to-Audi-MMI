@@ -1,0 +1,19 @@
+# SPDX-FileCopyrightText: 2026 Matthew Watkins <mwatkins@linuxfoundation.org>
+# SPDX-License-Identifier: GPL-3.0-or-later
+
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+.mypy_cache/
+.ruff_cache/
+
+# Generated report written by check-artwork.py --csv
+missing-artwork.csv
+
+# macOS
+.DS_Store
+
+# aislop writes a local score history on every scan (see aislop trend).
+# .aislop/config.yml is the only file there that belongs in git.
+.aislop/history.jsonl

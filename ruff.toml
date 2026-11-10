@@ -1,0 +1,29 @@
+# SPDX-FileCopyrightText: 2026 Matthew Watkins <mwatkins@linuxfoundation.org>
+# SPDX-License-Identifier: GPL-3.0-or-later
+
+# Lint configuration for the library tools (audit-library.py, check-artwork.py).
+# Run:  uv run --with ruff ruff check . && uv run --with ruff ruff format --check .
+
+line-length = 100
+target-version = "py311"
+
+[lint]
+select = ["ALL"]
+ignore = [
+  # Deliberate choices for small command-line tools:
+  "T201",   # print() is the user interface of these scripts
+  "PTH",    # os.path is used throughout; rewriting tested code to pathlib is churn
+  "CPY001", # the SPDX header (REUSE) is the copyright notice; ruff does not recognise it
+  # Formatter conflicts / docstring-style alternatives:
+  "COM812",
+  "ISC001",
+  "D203",
+  "D213",
+  # Complexity thresholds are tuned for libraries, not CLI report generators:
+  "PLR0913",
+  "PLR2004",
+]
+
+[lint.per-file-ignores]
+# The inline PEP 723 block and `uv run` shebang are not Python packages.
+"*.py" = ["INP001", "EXE001"]

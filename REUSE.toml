@@ -1,0 +1,11 @@
+# SPDX-FileCopyrightText: 2026 Matthew Watkins <mwatkins@linuxfoundation.org>
+# SPDX-License-Identifier: GPL-3.0-or-later
+
+version = 1
+
+# Files that cannot carry an inline SPDX comment.
+[[annotations]]
+path = ["pyrightconfig.json"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2026 Matthew Watkins <mwatkins@linuxfoundation.org>"
+SPDX-License-Identifier = "GPL-3.0-or-later"
